@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --main-bg-color: #fff;
+    --main-text-color: #000;
+    --themeclrtxt1: #FFDF2B;
+    --themeclrtxt2: blueviolet;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    overflow: hidden;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 3rem;
+    list-style: none;
+    padding: 20px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+
+
+.center {
+    /* background-color: blue; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.center .s1 {
+    position: absolute;
+    width: 35%;
+    left: 15%;
+}
+
+
+.center .s1 h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--themeclrtxt1);
+    text-transform: uppercase;
+}
+
+.center .s1 h2{
+    font-size: 1.8rem;
+    width: 80%;
+    font-weight: 500;
+    -webkit-text-stroke: 1px var(--main-text-color);
+    color: transparent;
+    margin-bottom: 1rem;
+
+}
+
+
+.center .s1 button{
+    padding: 10px 30px;
+    display: flex;
+    background-color: var(--themeclrtxt2);
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.center .s1 button svg{
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.center  img{
+    width: 35%;
+}
+
+.socials {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.socials span{
+    font-size: 1.2rem;
+    color: var(--main-text-color);
+}
